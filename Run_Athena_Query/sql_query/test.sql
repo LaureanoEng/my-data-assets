@@ -1,0 +1,1 @@
+SELECT * FROM "prod-iguana-amdocs"."cmf" limit 10;
