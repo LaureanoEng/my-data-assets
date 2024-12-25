@@ -38,4 +38,4 @@ database = 'analytics_dev'
 output_bucket = 's3://athena-queries-strata-analytics/'
 
 results = run_athena_query_from_file(file_path, database, output_bucket)
-print(results)
+print(results['ResponseMetadata'])
