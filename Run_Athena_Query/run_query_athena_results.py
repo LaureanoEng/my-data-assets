@@ -47,9 +47,9 @@ def run_athena_query_and_save_to_csv(file_path, database, output_bucket, csv_out
     print(f'Results saved to {csv_output_path}')
 
 # Uso de la función
-file_path = './sql_query/test.sql'
-database = 'prod-iguana-amdocs'
-output_bucket = 's3://aws-athena-query-results-us-east-1-509654266774//'
-csv_output_path = './sql_query/results/output.csv'
+file_path = 'C:/Users/Strata/Desktop/my-data-assets/Run_Athena_Query/sql_query/test.sql'
+database = 'analytics_dev'
+output_bucket = 's3://athena-queries-strata-analytics/'
+csv_output_path = 'sql_query/results/output.csv'
 
 run_athena_query_and_save_to_csv(file_path, database, output_bucket, csv_output_path)

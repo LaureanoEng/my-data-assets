@@ -1,1 +1,1 @@
-SELECT * FROM "prod-iguana-amdocs"."cmf" limit 10;
+SELECT * FROM "analytics_dev"."arieltest" limit 10;

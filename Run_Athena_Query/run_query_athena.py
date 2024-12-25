@@ -33,9 +33,9 @@ def run_athena_query_from_file(file_path, database, output_bucket):
     return result_response
 
 # Uso de la función
-file_path = './sql_query/test.sql'
-database = 'prod-iguana-amdocs'
-output_bucket = 's3://aws-athena-query-results-us-east-1-509654266774//'
+file_path = 'C:/Users/Strata/Desktop/my-data-assets/Run_Athena_Query/sql_query/test.sql'
+database = 'analytics_dev'
+output_bucket = 's3://athena-queries-strata-analytics/'
 
 results = run_athena_query_from_file(file_path, database, output_bucket)
 print(results)
