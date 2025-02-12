@@ -71,6 +71,8 @@ Compress-Archive -Path "C:/path/to/my-lambda-project/lambda_function.py" -Destin
 En Linux:
 ```sh
 zip lambda_function.zip lambda_function.py
+
+zip -r lambda_function.zip CLI_Lambda/
 ```
 
 ### Despliegue del código
