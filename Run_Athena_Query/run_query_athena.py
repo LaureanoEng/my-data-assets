@@ -33,7 +33,7 @@ def run_athena_query_from_file(file_path, database, output_bucket):
     return result_response
 
 # Uso de la función
-file_path = 'C:/Users/Strata/Desktop/my-data-assets/Run_Athena_Query/sql_query/test.sql'
+file_path = r'C:\Users\Laureano\Desktop\my-data-assets\Run_Athena_Query\sql_query\test.sql'
 database = 'analytics_dev'
 output_bucket = 's3://athena-queries-strata-analytics/'
 

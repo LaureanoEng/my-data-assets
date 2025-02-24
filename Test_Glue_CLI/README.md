@@ -17,7 +17,7 @@ sudo snap install aws-cli --classic
 Utiliza el siguiente comando para copiar el script test_cli_glue.py a un bucket de S3:
 
 ```sh
-aws s3 cp C:/Users/Strata/Desktop/my-data-assets/Test_Glue_CLI/test_cli_glue.py s3://data-assets-cli-test/scripts/
+aws s3 cp "C:/Users/Laureano/Desktop/my-data-assets/Test_Glue_CLI/test_cli_glue.py" s3://data-assets-cli-test/scripts/
 ```
 
 ### Crear un Trabajo de AWS Glue
@@ -35,7 +35,7 @@ Utiliza el siguiente comando para actualizar un trabajo de AWS Glue existente:
 
 ```sh
 aws glue update-job \
-  --job-name MyJob \
+  --job-name glue-cli-test \
   --job-update JobName=MyJob,Role=arn:aws:iam::058472766567:role/Gluepermisos,Command={Name=glueetl,ScriptLocation=s3://data-assets-cli-test/scripts/test_cli_glue.py}
 ```
 
